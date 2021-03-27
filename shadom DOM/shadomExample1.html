@@ -1,0 +1,16 @@
+<html>
+  <head></head>
+  <body>
+    <p id="hostElement"></p>
+    <script>
+      // Create the shadow DOM for the shadow host:
+      var shadow = document.querySelector("#hostElement").createShadowRoot();
+
+      // Create an HTML element in the shadow DOM:
+      shadow.innerHTML = "<p>This text is in the Shadow DOM.</p>";
+
+      // Style the HTML element in the shadow DOM:
+      shadow.innerHTML += "<style>p { color: red; }</style>";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+                Shadom Dom Concepts
+            ----------------------------
+            By Shadow Dom we can use strictly more effectively by the idea of encapsulation.
+            in the component architecture world. This helps us avoid unwanted side effects 
+            while maintaining our component code clean, minimal, easy to extend and rebuild.
+
+
+            An important feature of web components is encapsulation—the ability to hide
+            and differentiate the behavior, style, and markup structure from the other 
+            code on the page such that the various parts do not overlap and keep the code 
+            nice and clean. The core component of this is the Shadow DOM API,
+            which offers a way to add a separate hidden DOM to an element. This article
+            addresses the basics of using Shadow DOM and Shadow root concepts.
+
+
+
+
+            Like a regular DOM, a shadow DOM is automatically generated 
+            from the HTML code by most popular browsers. However, this type of DOM 
+            doesn’t apply to the entire web project, only to the project component(s)
+            expressed within it. In addition, shadow DOMs separate the elements they contain
+            from any default styling and structuring instructions that apply across projects,
+            such as certain CSS statements. In simple terms, shadow DOMs are self-contained,
+            encapsulated blocks of code within a regular DOM that have their own scope.
+
+
+
+                       Richa(❁´◡`❁)
+                     
+
+                       DOM (regular dom)
+                     /     \
+                    /      shadom dom
+
+

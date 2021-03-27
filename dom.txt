@@ -1,0 +1,128 @@
+                 DOM
+                ------
+
+                The HTML DOM Tree of Objects
+DOM HTML tree
+With the object model, JavaScript gets all the power it needs to create dynamic HTML:
+
+
+
+
+With the object model, JavaScript gets all the power it needs to create dynamic HTML:
+
+JavaScript can change all the HTML elements in the page
+JavaScript can change all the HTML attributes in the page
+JavaScript can change all the CSS styles in the page
+JavaScript can remove existing HTML elements and attributes
+JavaScript can add new HTML elements and attributes
+JavaScript can react to all existing HTML events in the page
+JavaScript can create new HTML events in the page
+
+
+
+HTML DOM methods are actions you can perform (on HTML Elements).
+
+HTML DOM properties are values (of HTML Elements) that you can set or change.
+
+The DOM Programming Interface
+The HTML DOM can be accessed with JavaScript (and with other programming languages).
+
+In the DOM, all HTML elements are defined as objects.
+
+The programming interface is the properties and methods of each object.
+
+A property is a value that you can get or set (like changing the content of an HTML element).
+
+A method is an action you can do (like add or deleting an HTML element).
+
+
+
+//Notes
+innerHTML is a property which can be used to set or get the value in  html Objects.
+
+getElementByID()
+---------------------
+
+set --> <p id="demo"></p>  
+get --> <p id="intro"> Hello my love </p>
+
+getElementByTagName
+------------------------
+
+getElementsByClassName
+--------------------------
+If you want to find all HTML elements with the same class name, use getElementsByClassName().
+This example returns a list of all elements with class="intro".
+
+
+getElementByTagName
+-----------------------
+
+
+removeElement
+---------------------
+
+removeAttribute
+---------------------
+
+removeChild()
+-------------------
+
+
+Events 
+-------------
+Reacting to Events
+A JavaScript can be executed when an event occurs, like when a user clicks on an HTML element.
+
+To execute code when a user clicks on an element, add JavaScript code to an HTML event attribute:
+
+onclick=JavaScript
+Examples of HTML events:
+
+When a user clicks the mouse
+When a web page has loaded
+When an image has been loaded
+When the mouse moves over an element
+When an input field is changed
+When an HTML form is submitted
+When a user strokes a key
+
+
+The onmousedown, onmouseup and onclick Events(mouse events)
+-----------------------------------------------------------------
+The onmousedown, onmouseup, and onclick events are all parts of a mouse-click. 
+First when a mouse-button is clicked, the onmousedown event is triggered, then, 
+when the mouse-button is released, the onmouseup event is triggered, finally,
+ when the mouse-click is completed, the onclick event is triggered.
+
+
+
+ Events
+ Mouse Events
+ Event Listener
+ Event bubbling and capturing
+
+
+ Event Bubbling or Event Capturing?
+There are two ways of event propagation in the HTML DOM, bubbling and capturing.
+
+Event propagation is a way of defining the element order when an event occurs. If you have a <p> element inside a <div> element, and the user clicks on the <p> element, which element's "click" event should be handled first?
+
+In bubbling the inner most element's event is handled first and then the outer: the <p> element's click event is handled first, then the <div> element's click event.
+
+In capturing the outer most element's event is handled first and then the inner: the <div> element's click event will be handled first, then the <p> element's click event.
+
+With the addEventListener() method you can specify the propagation type by using the "useCapture" parameter:
+
+addEventListener(event, function, useCapture);
+The default value is false, which will use the bubbling propagation, when the value is set to true, the event uses the capturing propagation.
+
+<div> 
+     <p> <--- user click(Run first)
+</div>(Run Second)
+
+
+addEventListener(click, function(),true); ---> capturing
+EventsAtribute
+Events Bubbling or Capturing
+removeEventListener
